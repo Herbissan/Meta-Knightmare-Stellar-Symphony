@@ -86,6 +86,8 @@ function scr_MKSS_Player_MetaKnight_State_Parry_Step()
 			{
 				if (parryAttackIndex != -1)
 				{
+					scr_Debug_WriteLog(string(parryAttackIndex));
+					
 					other.attackIndex = parryAttackIndex;
 					
 					scr_MKSS_ParticleSet_ParryCircle(x,y);

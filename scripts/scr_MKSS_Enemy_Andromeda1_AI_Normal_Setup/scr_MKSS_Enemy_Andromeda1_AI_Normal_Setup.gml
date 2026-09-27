@@ -27,6 +27,7 @@ function scr_MKSS_Enemy_Andromeda1_AI_Normal_Setup(targetIsBoss = true)
 	
 	#region Phase 2
 	andromeda1_Attack_CrossSlash = scr_MKSS_Enemy_Andromeda1_AI_Normal_CrossSlash_Step;
+	andromeda1_Attack_GiantSlash = scr_MKSS_Enemy_Andromeda1_AI_Normal_GiantSlash_Step;
 	#endregion
 	#endregion
 	
