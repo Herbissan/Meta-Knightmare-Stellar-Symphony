@@ -20,4 +20,6 @@ activeTimer = 10;
 spawnTimer = -1;
 endTimer = -1;
 endTimerMax = 210;
+
+startEffectPlayed = false;
 #endregion

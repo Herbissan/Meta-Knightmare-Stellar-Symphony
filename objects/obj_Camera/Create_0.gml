@@ -9,6 +9,10 @@ cameraX1Limit = -1;
 cameraX2Limit = -1;
 cameraY1Limit = -1;
 cameraY2Limit = -1;
+limitedXOffset1 = cameraX;
+limitedXOffset2 = cameraX + global.gameWidth;
+limitedYOffset1 = cameraY;
+limitedYOffset2 = cameraY + global.gameHeight;
 
 shakeX = 0;
 shakeY = 0;

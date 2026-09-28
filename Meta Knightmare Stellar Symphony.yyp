@@ -3366,6 +3366,7 @@
     {"id":{"name":"snd_MKSS_Dialogue_OilWheelie","path":"sounds/snd_MKSS_Dialogue_OilWheelie/snd_MKSS_Dialogue_OilWheelie.yy",},},
     {"id":{"name":"snd_MKSS_Dialogue_Strimp","path":"sounds/snd_MKSS_Dialogue_Strimp/snd_MKSS_Dialogue_Strimp.yy",},},
     {"id":{"name":"snd_MKSS_DoorEnter","path":"sounds/snd_MKSS_DoorEnter/snd_MKSS_DoorEnter.yy",},},
+    {"id":{"name":"snd_MKSS_EnemyArena","path":"sounds/snd_MKSS_EnemyArena/snd_MKSS_EnemyArena.yy",},},
     {"id":{"name":"snd_MKSS_EnemyHit","path":"sounds/snd_MKSS_EnemyHit/snd_MKSS_EnemyHit.yy",},},
     {"id":{"name":"snd_MKSS_EnemyHurt1","path":"sounds/snd_MKSS_EnemyHurt1/snd_MKSS_EnemyHurt1.yy",},},
     {"id":{"name":"snd_MKSS_EnemyHurtInvincible","path":"sounds/snd_MKSS_EnemyHurtInvincible/snd_MKSS_EnemyHurtInvincible.yy",},},

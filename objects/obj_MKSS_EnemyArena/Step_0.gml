@@ -6,6 +6,18 @@ if (!localPause)
 	var flag_Spawn = false;
 	#endregion
 	
+	#region Start Effect
+	if (!startEffectPlayed)
+	{
+		var sfx = scr_PlaySfx(snd_MKSS_EnemyArena);
+		audio_sound_pitch(sfx,random_range(.85,1.15));
+		
+		scr_MKSS_UI_BackgroundOverlay_Create(10,layer_get_depth("Player") + 1,false,[c_white],,true).alpha = .2;
+		
+		startEffectPlayed = true;
+	}
+	#endregion
+	
 	#region Play End Sound
 	if (playEndSound)
 	{

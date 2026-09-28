@@ -1,6 +1,6 @@
 ///@description MKSS - UI - Background Overlay - Create
 
-function scr_MKSS_UI_BackgroundOverlay_Create(targetDestroyTimer,targetDepth = layer_get_depth("Collision"),targetCanBePaused = true,targetColorList = [c_black],targetColorTimer = -1)
+function scr_MKSS_UI_BackgroundOverlay_Create(targetDestroyTimer,targetDepth = layer_get_depth("Collision"),targetCanBePaused = true,targetColorList = [c_black],targetColorTimer = -1,targetCanFadeOut = false)
 {
 	with (obj_MKSS_UI_BackgroundOverlay) instance_destroy();
 	
@@ -15,6 +15,8 @@ function scr_MKSS_UI_BackgroundOverlay_Create(targetDestroyTimer,targetDepth = l
 		colorTimer = colorTimerMax;
 		
 		destroyTimer = targetDestroyTimer;
+		
+		canFadeOut = targetCanFadeOut;
 	}
 	
 	return overlay;

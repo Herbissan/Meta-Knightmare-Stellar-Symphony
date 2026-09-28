@@ -2535,6 +2535,7 @@
     {"name":"snd_MKSS_Dialogue_OilWheelie","order":60,"path":"sounds/snd_MKSS_Dialogue_OilWheelie/snd_MKSS_Dialogue_OilWheelie.yy",},
     {"name":"snd_MKSS_Dialogue_Strimp","order":59,"path":"sounds/snd_MKSS_Dialogue_Strimp/snd_MKSS_Dialogue_Strimp.yy",},
     {"name":"snd_MKSS_DoorEnter","order":26,"path":"sounds/snd_MKSS_DoorEnter/snd_MKSS_DoorEnter.yy",},
+    {"name":"snd_MKSS_EnemyArena","order":103,"path":"sounds/snd_MKSS_EnemyArena/snd_MKSS_EnemyArena.yy",},
     {"name":"snd_MKSS_EnemyHit","order":7,"path":"sounds/snd_MKSS_EnemyHit/snd_MKSS_EnemyHit.yy",},
     {"name":"snd_MKSS_EnemyHurt1","order":25,"path":"sounds/snd_MKSS_EnemyHurt1/snd_MKSS_EnemyHurt1.yy",},
     {"name":"snd_MKSS_EnemyHurtInvincible","order":65,"path":"sounds/snd_MKSS_EnemyHurtInvincible/snd_MKSS_EnemyHurtInvincible.yy",},

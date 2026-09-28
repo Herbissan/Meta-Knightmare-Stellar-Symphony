@@ -1,6 +1,6 @@
 ///@description MKSS - Player - Set Weapons
 
-function scr_MKSS_Player_SetWeapons()
+function scr_MKSS_Player_SetWeapons(playerNum = 0)
 {
 	#region Setup
 	ds_list_clear(global.MKSS_PlayerWeaponList[playerNum]);

@@ -7,7 +7,7 @@ var yy = camera_get_view_y(mainView);
 
 #region Overlay
 draw_set_color(colorList[colorListIndex]);
-draw_set_alpha(.5);
+draw_set_alpha(alpha);
 draw_rectangle(xx,yy,xx + global.gameWidth,yy + global.gameHeight,false);
 draw_set_color(c_white);
 draw_set_alpha(1);
