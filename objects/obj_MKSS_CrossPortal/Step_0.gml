@@ -1,10 +1,10 @@
-/// @description Insert description here
-// You can write your code in this editor
+///@description Main
 
-scale = lerp(scale,scaleTarget,.1); 
-
-image_xscale = scale;
-image_yscale = scale;
-
-if (mouse_check_button_pressed(mb_left)) scaleTarget = 1.5;
-if (mouse_check_button_pressed(mb_right)) scaleTarget = 0;
+if (!localPause)
+{
+	#region Portal Animation
+	portalScale = lerp(portalScale,portalScaleTarget,.05);
+	
+	if (portalScale <= .05) instance_destroy();
+	#endregion
+}

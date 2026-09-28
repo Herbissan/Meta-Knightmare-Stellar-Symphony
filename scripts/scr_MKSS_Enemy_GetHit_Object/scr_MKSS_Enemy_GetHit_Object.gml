@@ -80,7 +80,7 @@ function scr_MKSS_Enemy_GetHit_Object(targetEnemy,targetAttack)
 					targetEnemy.metaPointsOnOverkill = max(0,targetEnemy.metaPointsOnOverkill - metaPointsFinal);
 					if (metaPointsFinal != 0) scr_MKSS_SpawnMetaPoint(metaPointsFinal,targetEnemy.x,targetEnemy.y,targetEnemy.depth - 1,owner,knockbackAngleFinal);
 					
-					scr_MKSS_ParticleSet_EnemyHitStars(targetEnemy.x,targetEnemy.y,true);
+					scr_MKSS_ParticleSet_EnemyHitStars(targetEnemy.x,targetEnemy.y,depth,true);
 					
 					if (targetEnemy.metaPointsOnDeath != 0)
 					{
@@ -113,7 +113,7 @@ function scr_MKSS_Enemy_GetHit_Object(targetEnemy,targetAttack)
 				}
 				else
 				{
-					scr_MKSS_ParticleSet_EnemyHitStars(targetEnemy.x,targetEnemy.y,false);
+					scr_MKSS_ParticleSet_EnemyHitStars(targetEnemy.x,targetEnemy.y,depth,false);
 				}
 			}
 			else

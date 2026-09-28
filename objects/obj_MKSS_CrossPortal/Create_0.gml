@@ -1,5 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+///@description Create
 
-scale = .2;
-scaleTarget = 1;
+#region Initialize Variables
+portalScale = .2;
+portalScaleTarget = 1;
+#endregion

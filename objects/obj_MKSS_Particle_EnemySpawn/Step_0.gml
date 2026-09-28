@@ -2,13 +2,17 @@
 
 if (!localPause)
 {
+	#region Portal Animation
+	portalScale = lerp(portalScale,portalScaleTarget,.05); 
+	#endregion
+	
 	#region Particle Timer
 	if (particleTimer != -1)
 	{
 		particleTimer = max(particleTimer - speedMultFinal,0);
 		if (particleTimer == 0)
 		{
-			scr_MKSS_ParticleSet_EnemyHitStars(x + irandom_range(-8,8),y + irandom_range(-8,8),false);
+			scr_MKSS_ParticleSet_EnemyHitStars(x + irandom_range(-8,8),y + irandom_range(-8,8),depth - 1,false);
 			
 			particleTimer = particleTimerMax;
 		}
@@ -26,7 +30,9 @@ if (!localPause)
 			var sfx = scr_PlaySfx(snd_MKSS_EnemySpawner_End);
 			audio_sound_pitch(sfx,random_range(.85,1.15));
 			
-			scr_MKSS_ParticleSet_Circle1(x,y);
+			scr_MKSS_ParticleSet_Circle1(x,y,depth - 1);
+			
+			with (portal) portalScaleTarget = 0;
 			
 			instance_destroy();
 			

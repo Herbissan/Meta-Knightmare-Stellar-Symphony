@@ -1,6 +1,6 @@
 ///@description MKSS - Particle Set - Enemy Hit Stars
 
-function scr_MKSS_ParticleSet_EnemyHitStars(parTargetX,parTargetY,parIsOverkill)
+function scr_MKSS_ParticleSet_EnemyHitStars(parTargetX,parTargetY,parTargetDepth,parIsOverkill)
 {
 	var pieceCount = irandom_range(2,3);
 	
@@ -9,7 +9,7 @@ function scr_MKSS_ParticleSet_EnemyHitStars(parTargetX,parTargetY,parIsOverkill)
 		var angle = irandom_range(0,359);
 		var rainbowRng = irandom_range(1,sprite_get_width(spr_MKSS_Particle_Star_Pal_Blue) - 1);
 		
-		par[i] = instance_create_depth(parTargetX + irandom_range(-4,4),parTargetY + irandom_range(-4,4),depth,obj_Particle);
+		par[i] = instance_create_depth(parTargetX + irandom_range(-4,4),parTargetY + irandom_range(-4,4),parTargetDepth,obj_Particle);
 		if (parIsOverkill)
 		{
 			par[i].sprite_index = spr_MKSS_Particle_ShrinkingStar1;

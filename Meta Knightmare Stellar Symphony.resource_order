@@ -497,6 +497,7 @@
     {"name":"Attack Order","order":2,"path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Andromeda 1/Scripts/Attack Order.yy",},
     {"name":"Normal","order":1,"path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Andromeda 1/Scripts/Attack Order/Normal.yy",},
     {"name":"Sprites","order":1,"path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Andromeda 1/Sprites.yy",},
+    {"name":"Arm All","order":12,"path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Andromeda 1/Sprites/Arm All.yy",},
     {"name":"Arm LB","order":8,"path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Andromeda 1/Sprites/Arm LB.yy",},
     {"name":"Arm LT","order":10,"path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Andromeda 1/Sprites/Arm LT.yy",},
     {"name":"Arm RB","order":9,"path":"folders/Meta Knightmare Stellar Symphony/Enemies/Enemies/Stage Bosses/Andromeda 1/Sprites/Arm RB.yy",},

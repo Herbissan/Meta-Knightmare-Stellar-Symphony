@@ -22,7 +22,3 @@ targetX = x;
 
 cutsceneCheck = true;
 #endregion
-
-#region Create Surface
-if (!instance_exists(obj_MKSS_Surface_Planetarium)) instance_create_depth(0,0,0,obj_MKSS_Surface_Planetarium);
-#endregion
