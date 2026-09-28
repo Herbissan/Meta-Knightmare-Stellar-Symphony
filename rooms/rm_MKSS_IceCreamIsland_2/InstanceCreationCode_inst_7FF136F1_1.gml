@@ -1,1 +1,0 @@
-triggerScript = scr_MKSS_TriggerBox_Activation_TutorialText_Jump;
