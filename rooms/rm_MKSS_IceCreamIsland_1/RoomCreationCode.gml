@@ -13,7 +13,7 @@ if (!global.MKSS_StageList[global.MKSS_StageIDs[? "iceCreamIsland"]].isBeaten)
 {
 	with (instance_create_layer(0,0,"Instances",obj_MKSS_Cutscene))
 	{
-		scr_MKSS_Cutscene_Preset_TutorialIntro();
+		scr_MKSS_Cutscene_Preset_IceCreamIslandIntro();
 	}
 }
 #endregion

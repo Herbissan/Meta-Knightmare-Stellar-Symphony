@@ -1,6 +1,6 @@
-///@description MKSS - Cutscene - Preset - Tutorial Intro
+///@description MKSS - Cutscene - Preset - Ice Cream Island Intro
 
-function scr_MKSS_Cutscene_Preset_TutorialIntro()
+function scr_MKSS_Cutscene_Preset_IceCreamIslandIntro()
 {
 	#region Setup
 	canBePaused = false;
@@ -25,7 +25,6 @@ function scr_MKSS_Cutscene_Preset_TutorialIntro()
 		{
 			#region Overlay
 			overlayAlpha = lerp(overlayAlpha,phase < 2,.02);
-			#endregion
 			#endregion
 			
 			#region Camera
@@ -112,7 +111,15 @@ function scr_MKSS_Cutscene_Preset_TutorialIntro()
 			
 			cameraOffset = cameraOffsetOld;
 			
-			with (obj_MKSS_CameraOffsetController) targetYOffset = other.cameraOffset;
+			with (obj_MKSS_CameraOffsetController)
+			{
+				if (other.isSkipped)
+				{
+					yOffset = other.cameraOffset;
+					scr_Camera_UpdateOffsets(xOffset,yOffset);
+				}
+				targetYOffset = other.cameraOffset;
+			}
 			
 			with (obj_Player)
 			{

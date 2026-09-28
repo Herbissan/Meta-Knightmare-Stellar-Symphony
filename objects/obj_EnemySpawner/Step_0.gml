@@ -2,13 +2,22 @@
 
 if (!localPause)
 {
-	#region Spawn Timer
-	if (spawnTimer != -1)
+	if ((canSpawnEnemy) and (enemyObject != -1) and ((bypassViewCheck) or (!scr_Entity_OutsideView(32))))
 	{
-		spawnTimer = max(spawnTimer - speedMultFinal,0);
-		if (spawnTimer == 0)
+		#region Spawn Particle
+		if (!spawnParticleSpawned)
 		{
-			if ((canSpawnEnemy) and (enemyObject != -1) and ((!scr_Entity_OutsideView(32)) or (bypassViewCheck)))
+			if (spawnParticleScript != -1) script_execute_ext(spawnParticleScript,spawnParticleScriptArgs);
+			
+			spawnParticleSpawned = true;
+		}
+		#endregion
+		
+		#region Spawn Timer
+		if (spawnTimer != -1)
+		{
+			spawnTimer = max(spawnTimer - speedMultFinal,0);
+			if (spawnTimer == 0)
 			{
 				if (enemySpawnSound != -1) scr_PlaySfx(enemySpawnSound);
 				
@@ -35,10 +44,10 @@ if (!localPause)
 				canSpawnEnemy = false;
 				
 				if (destroyAfterSpawning) instance_destroy();
+				
+				spawnTimer = spawnTimerMax;
 			}
-			
-			spawnTimer = spawnTimerMax;
 		}
+		#endregion
 	}
-	#endregion
 }

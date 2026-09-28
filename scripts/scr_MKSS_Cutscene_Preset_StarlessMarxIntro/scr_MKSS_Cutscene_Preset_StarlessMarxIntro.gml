@@ -232,7 +232,15 @@ function scr_MKSS_Cutscene_Preset_StarlessMarxIntro()
 				image_alpha = alpha;
 			}
 			
-			with (obj_MKSS_CameraOffsetController) targetYOffset = other.cameraOffset;
+			with (obj_MKSS_CameraOffsetController)
+			{
+				if (other.isSkipped)
+				{
+					yOffset = other.cameraOffset;
+					scr_Camera_UpdateOffsets(xOffset,yOffset);
+				}
+				targetYOffset = other.cameraOffset;
+			}
 			
 			with (obj_Player)
 			{

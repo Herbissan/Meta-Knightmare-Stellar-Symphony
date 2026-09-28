@@ -14,6 +14,7 @@ with (instance_create_layer(40,40,"Enemies",obj_EnemySpawner))
 	enemyObject = obj_MKSS_Enemy_WaddleDee;
 	enemyAISetup = scr_MKSS_Enemy_WaddleDee_AI_Walk_Setup;
 	
-	scr_MKSS_ParticleSet_EnemySpawn(x,y,spawnTimer);
+	spawnParticleScript = scr_MKSS_ParticleSet_EnemySpawn;
+	spawnParticleScriptArgs = [x,y,spawnTimer];
 }
 #endregion

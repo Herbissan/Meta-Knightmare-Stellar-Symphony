@@ -17,4 +17,6 @@ bossSpawned = false;
 musicPlayed = false;
 
 canBePaused = true;
+
+isSkipped = false;
 #endregion

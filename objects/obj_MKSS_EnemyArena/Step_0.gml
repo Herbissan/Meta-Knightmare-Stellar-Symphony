@@ -149,7 +149,8 @@ if (!localPause)
 					
 					bypassViewCheck = enemyStruct.bypassViewCheck;
 					
-					scr_MKSS_ParticleSet_EnemySpawn(x,y,spawnTimer);
+					spawnParticleScript = scr_MKSS_ParticleSet_EnemySpawn;
+					spawnParticleScriptArgs = [x,y,spawnTimer];
 				}
 				
 				spawnTimer = enemyStruct.nextTimer;

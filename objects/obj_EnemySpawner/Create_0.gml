@@ -14,6 +14,10 @@ scale = 1;
 enemyAISetup = -1;
 enemyAISetupArg = [];
 
+spawnParticleScript = -1;
+spawnParticleScriptArgs = [];
+spawnParticleSpawned = false;
+
 enemySpawnSound = -1;
 
 canSpawnEnemy = true;

@@ -1,9 +1,5 @@
 ///@description End Step
 
-#region Camera View Size
-camera_set_view_size(mainView,global.gameWidth,global.gameHeight);
-#endregion
-
 #region Shake
 scr_Camera_Shake();
 #endregion

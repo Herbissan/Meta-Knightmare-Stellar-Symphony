@@ -7,7 +7,7 @@ if (stepScript != -1) script_execute(stepScript);
 if (!localPause)
 {
 	#region Pause
-	if ((input_check_pressed("start",playerNum)) and (canBePaused))
+	if ((input_check_pressed("start",playerNum)) and ((canBePaused) or (global.debug)))
 	{
 		scr_Debug_WriteLog("Cutscene Phase - " + string(phase));
 		scr_Debug_WriteLog("Cutscene Timer - " + string(phaseTimer));
@@ -44,6 +44,7 @@ else
 	if (input_check_pressed("select",playerNum))
 	{
 		global.MKSS_CutsceneIsPaused = false;
+		isSkipped = true;
 		
 		if (phaseSetupScript[array_length(phaseSetupScript) - 1] != -1) script_execute(phaseSetupScript[array_length(phaseSetupScript) - 1]);
 	}

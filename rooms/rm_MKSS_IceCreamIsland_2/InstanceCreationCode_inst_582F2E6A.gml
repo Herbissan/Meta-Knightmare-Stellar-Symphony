@@ -1,0 +1,1 @@
+scr_MKSS_Enemy_Gordo_AI_Idle_Setup();
