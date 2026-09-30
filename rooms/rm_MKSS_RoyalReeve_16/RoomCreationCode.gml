@@ -1,0 +1,7 @@
+///@description Room Creation Code
+
+#region Room Setup
+script_execute(scr_MKSS_RoomSetup_RoyalReeve);
+#endregion
+
+///(Probably) last room before the boss///

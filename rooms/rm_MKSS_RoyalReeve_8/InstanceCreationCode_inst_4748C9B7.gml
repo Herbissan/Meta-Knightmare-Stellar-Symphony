@@ -1,1 +1,1 @@
-targetRoom = rm_MKSS_RoyalReeve_8;
+targetRoom = rm_MKSS_RoyalReeve_9;
